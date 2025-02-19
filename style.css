@@ -1,0 +1,363 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+html body{
+    scroll-behavior: smooth;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;   
+}
+html{
+    scroll-behavior: smooth;   
+}
+header{
+width: 100%;
+height: 80px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 0 100px;
+background: #750505;
+}
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-image: url(one_evsu.png);
+    background-position: center;
+    background-size: cover;
+}
+.hero_message{
+    height: 100vh;
+    width: 100%;
+    background-image: url();
+    background-position: center;
+    background-size: cover;
+    flex: 1;
+    padding: 20px;
+
+}
+.hero_message h2{
+    color: #700808;
+    font-size: 60px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    justify-content: space-between;
+    margin-left: 100px;
+}
+.hero_message button{
+    position:relative;
+    background-color: #eee5e5;
+    color: #710f0f;
+    text-decoration: none;
+    border: 1px solid rgb(91, 9, 9);
+    font-weight: bold;
+    transform:.4s;
+    padding: 10px 25px;
+    border-radius: 15px 15px 15px 15px;
+    margin-left: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+ }
+ .hero_message button:hover{
+    background-color: #700808;
+    color: #fbfbfb;
+    border: 1px solid rgb(241, 233, 233);
+    cursor: pointer;
+ }
+ .hero_message p{
+    color: #700808;
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.logo{
+    font-size: 28px;
+    font-weight: bold;
+    color: #b0482e;
+    margin-right: 40px;
+}
+.logo img{
+    height: 50px;
+    width: 50px;
+    border-radius: 25px 25px 25px 25px;
+    border-color: #fbf5f5;
+}
+.nav-bar ul{
+    display: flex;
+    list-style: none;
+    justify-content: flex-end; /* Aligns items to the right */
+    padding: 0;
+    margin: 0;
+}
+.nav-bar ul li a{
+    display: block;
+    color: #edffef;
+    font-size: 20px;
+    padding: 8px 25px;
+    transition: .2s;
+    margin: 0px 5px;
+    text-decoration: none;
+    
+}
+.nav-bar ul li:hover a{
+    background-color: #f3cc30;
+    color: #750505;
+    cursor: pointer;
+    border-radius: 5px 5px 5px 5px;
+}
+.content{
+    position: absolute;
+    top: 40%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+h1{
+    color: #640808;
+    font-size: 75px;
+    margin: 20px 0px 20px;
+}
+h2{
+    color: #6a0707;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+h4{
+    color: #edffef;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+.button{
+position: absolute;
+background-color: #750505;
+color: #fff;
+text-decoration: none;
+border: 2px solid black;
+font-weight: bold;
+padding: 13px 30px;
+transform: .4s;
+}
+.button:hover{
+    background-color: #97a2a3;
+    color: #750505;
+    border: 2px solid black;
+    cursor: pointer;
+}
+.about{
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #750505;
+}
+.about img{
+    height: auto;
+    width: 600px;
+    border-radius: 15px 15px 15px 15px;
+}
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.about h2{
+    color:#edffef;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.about-text p{
+    color: #e8dede;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+.about-text{
+    width: 500px;
+}
+.about button{
+    position:relative;
+    background-color: #eee5e5;
+    color: #710f0f;
+    text-decoration: none;
+    border: 1px solid rgb(91, 9, 9);
+    font-weight: bold;
+    transform:.4s;
+    padding: 10px 25px;
+    border-radius: 10px 10px 10px 10px;
+ }
+ .about button:hover{
+    background-color: #480707;
+    color: #fbfbfb;
+    border: 1px solid rgb(241, 233, 233);
+    cursor: pointer;
+ }
+
+/*Event Section CSS*/
+.events{
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #f7f7f7;
+}
+.events h2{
+    color: #750505;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.box .card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+}
+.box .card .content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 40px;
+    background-color: rgb(238 211 211);
+    color: #750505;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.box .card:hover .content{
+    opacity: 1;
+}
+.card h3{
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #750505;
+}
+.box .card p{
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.box .card button{
+    position:relative;
+    background-color: #eee5e5;
+    color: #710f0f;
+    text-decoration: none;
+    border: 2px solid rgb(91, 9, 9);
+    font-weight: bold;
+    transform:.4s;
+    padding: 13px 30px;
+ }
+ .box .card button:hover{
+    background-color: #750505;
+    color: #fbfbfb;
+    border: 2px solid rgb(91, 9, 9)5;
+    cursor: pointer;
+ }
+ 
+/*Contact form*/
+.contact{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    background: #810b0b;
+}
+.contact-info,.contact-form{
+    width: 100%;
+    max-width: 600px;
+    margin: 30px;
+    text-align: center;
+    color: #edffef;
+    font-size: 25px;
+}
+.contact-info h2, .contact-form h2{
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: #edffef;
+}
+
+.contact-info h3, .contact-form h3{
+    font-size: 8px;
+    margin-bottom: 10px;
+    color: #edffef;
+}
+.contact-form form{
+    text-align: center;
+}
+.contact-form label, 
+.contact-form input , 
+.contact-form textarea ,
+.contact-form button {
+display: block;
+width: 100%;
+margin-bottom: 10px;
+}
+.contact-form input, .contact-form textarea{
+    padding: 8px;
+}
+.contact-info p{
+padding: 15px;
+font-size: 18px;
+}
+footer{
+    padding: 15px 0;
+    background: #750505;
+}
+footer h5{
+    font-size: 15px;
+    margin-top: 10px;
+    text-align: center;
+    color: #f4dcdc;
+}
+
+
+/* Specific style for EVSU link */
+.evsu-link {
+    color: #f8e72c;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    display: inline-block; /* Ensures margin-bottom applies */
+    margin-bottom: 10px; /* Adjust this value as needed */
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease-in-out;
+
+    /* color: #f8e72c;
+    font-weight: bold;
+    text-decoration: none;
+    margin-bottom: 50px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease-in-out; */
+}
+
+.evsu-link:hover {
+    color: #cd1212;
+    border-bottom: 2px solid #b52b27;
+}
